@@ -1,683 +1,711 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/universal.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Optional Code - Platform to Learn, Share, & Collaborate.</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>Scholar - Online School HTML5 Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 586 Scholar
-
-https://templatemo.com/tm-586-scholar
-
--->
   </head>
+  <body class="light">
+    <header>
+      <nav style="position: fixed; top: 0; width: 100%;height:75px">
+        <div class="nav-bar">
+          <li >
+            <a href="#" style="font-family: Text Me One;font-size: 24px;">
+              <img id="topLogo"  style="width: 40px;margin: -17px -10px -10px 0px"  src="images/optionalcode.png" alt="Optional Code Main Logo" />
+			   <span id="logoText" style="color:black">optional<span style="color:#ed2f41">code</span></span>
+            </a>
+          </li>
 
-<body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <h1>Scholar</h1>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Serach Start ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    <!-- ***** Serach Start ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                      <li class="scroll-to-section"><a href="#team">Team</a></li>
-                      <li class="scroll-to-section"><a href="#events">Events</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
+          <div style="display: flex;">
+            <div class="wrapper">
+              <input type="checkbox" id="hide_checkbox">
+              <label for="hide_checkbox" class="toggle">
+                <span class="toggle-button">
+                  <span class="crater crater-1"></span>
+                  <span class="crater crater-2"></span>
+                  <span class="crater crater-3"></span>   
+                  <span class="crater crater-4"></span>
+                  <span class="crater crater-5"></span>
+                  <span class="crater crater-6"></span>
+                  <span class="crater crater-7"></span>
+                </span>
+                <span class="star star-1"></span>
+                <span class="star star-2"></span>
+                <span class="star star-3"></span>
+                <span class="star star-4"></span>
+                <span class="star star-5"></span>
+                <span class="star star-6"></span>
+                <span class="star star-7"></span>
+                <span class="star star-8"></span>
+              </label>
             </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
 
-  <div class="main-banner" id="top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-banner">
-            <div class="item item-1">
-              <div class="header-text">
-                <span class="category">Our Courses</span>
-                <h2>With Scholar Teachers, Everything Is Easier</h2>
-                <p>Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
+
+          <input type="checkbox" id="check" />
+          <span class="menu font-sans">
+            <li>
+              <a class="text-white text-center" href="#courses">Courses</a>
+            </li>
+            <li><a class="text-white text-center" href="#footer">Contact Us</a></li>
+        
+            <label for="check" class="close-menu">
+              <i class="text-white fas fa-times"></i>
+            </label>
+          </span>
+
+        </div>
+
+          <label for="check" class="open-menu">
+            <i class="text-white fas fa-bars"></i>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="first-section">
+        <div class="headerText font-sans">
+          <h2 class="section-one-title text-bold">
+            Coding Career <br /><span>Learn by <span class="typed_text"></span></span>
+          </h2>
+          <h3 class="text-white">
+			Practical lessons, real projects, and guidance from industry professionals to make you job-ready
+          </h3>
+          <a href="#courses" class="text-bold">Explore Courses</a>
+        </div>
+        <div class="headerImage-div">
+          <img
+            src="images/headerImage.webp"
+            alt="A Boy Working on Laptop"
+            class="headerImage" />
+        </div>
+      </div>
+
+      <div class="second-section">
+        <div class="journey-title text-bold text-center">
+          <p class="font-sans">Our journey so far</p>
+        </div>
+        <div class="journey-list">
+          <div class="journey-items font-sans text-center">
+            <h4>4.7⭐️</h4>
+            <p>Out ratings</p>
+          </div>
+          <div class="border-right"></div>
+          <div class="journey-items font-sans text-center">
+            <h4 id="count1">100,000</h4>
+            <p>Enrollments</p>
+          </div>
+          <div class="border-right"></div>
+          <div class="journey-items font-sans text-center">
+            <h4 id="count2">150+</h4>
+            <p>Countries</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-div"></div>
+
+      <div id="courses" class="third-section font-sans">
+        <div>
+          <h1 class="third-section-title text-center title">
+            What would you like to <span><b>Learn?</b></span>
+          </h1>
+        </div>
+        <div>
+          <a href="#">
+            <div class="card">
+              <div>
+                <div>
+                  <div>
+                    <p class="card-level text-bold">
+                      BEGINNER TO ADVANCED 🔥🔥🔥 
+                    </p>
+                    <h3 class="course-title">
+                      The Ultimate Java Developer Program 
+                    </h3>
                   </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
+				  <div class="course-desc">
+					This comprehensive 5 month program is designed to take you from absolute beginner to job-ready Java developer.
+				  </div>
+                  <div class="line"></div>
+                  <div class="course-price-section text-bold">
+					<p class="final-price">₹ 15,000</p>
+                    <p class="prev-price">₹ 30,000</p>
+                    <p class="discount-percent">50% off</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="item item-2">
-              <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2>Get the best result out of your effort</h2>
-                <p>You are allowed to use this template for any educational or commercial purpose. You are not allowed to re-distribute the template ZIP file on any other website.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item item-3">
-              <div class="header-text">
-                <span class="category">Online Learning</span>
-                <h2>Online Learning helps you save the time</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="services section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees">
-            </div>
-            <div class="main-content">
-              <h4>Online Degrees</h4>
-              <p>Whenever you need free templates in HTML CSS, you just remember TemplateMo website.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses">
-            </div>
-            <div class="main-content">
-              <h4>Short Courses</h4>
-              <p>You can browse free templates based on different tags such as digital marketing, etc.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Web Experts</h4>
-              <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <div class="line-div"></div>
 
-  <div class="section about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-1">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Where shall we begin?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                </div>
-              </div>
+      <div class="advantage-section bg-dark">
+        <div class="advantage-sub-section">
+          <div class="whycm-container">
+            <div>
+              <h1 class="advantage-title title font-sans margin-0">
+                optionalcode Advantages
+              </h1>
+              <p class="advantage-desc font-poppin margin-0">
+                Discover More, Spend Less: Learn Beyond Limits for the Price of a Pizza 🍕
+              </p>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How do we work together?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Why SCHOLAR is the best?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  There are more than one hundred responsive HTML templates to choose from <strong>Template</strong>Mo website. You can browse by different tags or categories.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Do we get the best support?
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  You can also search on Google with specific keywords such as <code>templatemo business templates, templatemo gallery templates, admin dashboard templatemo, 3-column templatemo, etc.</code>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h6>About Us</h6>
-            <h2>What make us the best academy online?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
-            <div class="main-button">
-              <a href="#">Discover More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <section class="section courses" id="courses" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Latest Courses</h6>
-            <h2>Latest Courses</h2>
-          </div>
-        </div>
-      </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".design">Webdesign</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".development">Development</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".wordpress">Wordpress</a>
-        </li>
-      </ul>
-      <div class="row event_box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-01.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>160</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Learn Web Design</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>340</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Cindy Walker</span>
-              <h4>Web Development Tips</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>640</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Latest Web Trends</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>450</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Online Learning Steps</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>320</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Sophia Rose</span>
-              <h4>Be a WordPress Master</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>240</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Full Stack Developer</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="adv-section">
+              <div class="adv-card">
+                <img src="images/pocketFriendlyCourses.webp" alt="" />
+                <span class="adv-desc margin-0"
+                  >Pocket-Friendly Courses: Coding on a Budget!</span
+                >
+              </div>
 
-  <div class="section fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                   <p class="count-text ">Happy Students</p>
-                </div>
+              <div class="adv-card">
+                <img src="images/detailedExplanations.webp" alt="" />
+                <span class="adv-desc margin-0"
+                  >Intuitive & Detailed Explanations</span
+                >
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
-                  <p class="count-text ">Course Hours</p>
-                </div>
+
+              <div class="adv-card">
+                <img src="images/practiceProblems.webp" alt="" />
+                <span class="adv-desc margin-0"
+                  >Practice codes, real time feedback</span
+                >
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
-                  <p class="count-text ">Employed Students</p>
-                </div>
+
+              <div class="adv-card">
+                <img src="images/industryCurriculum.webp" alt="" />
+                <span class="adv-desc margin-0"
+                  >Industry vetted curriculum</span
+                >
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
-                  <p class="count-text ">Years Experience</p>
-                </div>
+
+              <div class="adv-card">
+                <img src="images/lifetimeAccess.webp" alt="" />
+                <span class="adv-desc margin-0"
+                  >Lifetime community access</span
+                >
+              </div>
+
+              <div class="adv-card">
+                <img src="images/doubtSupport.webp" alt="" />
+                <span class="adv-desc margin-0"
+                  >Unlimited doubt support</span
+                >
+              </div>
+
+              <div class="adv-card">
+                <img src="images/certificate.webp" alt="" />
+                <span class="adv-desc margin-0"
+                  >Certificate of completion</span
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="team section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-01.jpg" alt="">
-              <span class="category">UX Teacher</span>
-              <h4>Sophia Rose</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+   <!--   <div id="instructor" class="about-us font-sans text-center">
+        <div class="instructor-title">
+          <p class="text-bold title">
+            Meet your <span>Instructor</span>
+          </p>
+          <a href="pages/about us/about.html"
+            ><button class="button-61 text-bold text-center">
+              Know More
+            </button></a
+          >
+        </div>
+        <div class="line-long"></div>
+        <div class="instructor-content">
+          <div class="image-div">
+            <img src="images/circle-dp.webp" alt="Manish Kushwaha" />
+          </div>
+          <div class="name-div">
+            <p class="name text-bold">Manish Kushwaha</p>
+            <p class="designation text-bold">
+              Founder, optionalcode
+            </p>
+          </div>
+        </div>
+        <div class="description-div">
+          <p class="description">
+            Meet <span><i>Manish Kushwaha</i></span
+            >, a dynamic individual driven by an insatiable curiosity to explore
+            the ever-evolving world of technology. With a passion for coding and
+            a deep-rooted love for teaching, Manish stands out as a proficient
+            coder and a dedicated mentor.
+          </p>
+        </div>
+      </div>
+-->
+      <div class="line-div"></div>
+
+      <div id="social" class="social-section bg-dark-light">
+        <div class="text-center">
+          <p class="social-title font-sans text-bold title">
+            Join our Coding Family
+          </p>
+          <p class="social-desc sub-title font-poppin">
+            If you would like to keep up on the latest posts and courses, <br />
+            come by and connect with us on the following links.
+          </p>
+        </div>
+
+        <div id="social" class="social-card-section">
+          <div class="social-card">
+            <div class="social-icon">
+              <a target="_blank" href="https://www.youtube.com/@optionalcode">
+                <span
+                  style="
+                    box-sizing: border-box;
+                    display: block;
+                    overflow: hidden;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    position: relative;
+                  ">
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: block;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 100% 0px 0px;
+                    "></span>
+                  <img
+                    style="
+                      position: absolute;
+                      inset: 0px;
+                      box-sizing: border-box;
+                      padding: 0px;
+                      border: none;
+                      margin: auto;
+                      display: block;
+                      width: 0px;
+                      height: 0px;
+                      min-width: 100%;
+                      max-width: 100%;
+                      min-height: 100%;
+                      max-height: 100%;
+                    "
+                    src="images/youtube.webp"
+                    alt="Youtube Logo" />
+                </span>
+              </a>
+            </div>
+
+            <div class="social-text">
+              <a
+                class="text-link d-flex"
+                target="_blank"
+                href="https://www.youtube.com/@optionalcode">
+                <div>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="color: rgb(255, 0, 0)">
+                    <path
+                      d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
+                    <path
+                      d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
+                  </svg>
+                </div>
+                <p
+                  style="color: rgb(255, 0, 0)"
+                  class="margin-0 text-bold font-sans">
+                  YouTube
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="social-card">
+            <div class="social-icon">
+              <a target="_blank" href="https://www.instagram.com/optionalcode/">
+                <span
+                  style="
+                    box-sizing: border-box;
+                    display: block;
+                    overflow: hidden;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    position: relative;
+                  ">
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: block;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 100% 0px 0px;
+                    "></span>
+                  <img
+                    style="
+                      position: absolute;
+                      inset: 0px;
+                      box-sizing: border-box;
+                      padding: 0px;
+                      border: none;
+                      margin: auto;
+                      display: block;
+                      width: 0px;
+                      height: 0px;
+                      min-width: 100%;
+                      max-width: 100%;
+                      min-height: 100%;
+                      max-height: 100%;
+                    "
+                    src="images/instagram.webp"
+                    alt="Instagram Logo" />
+                </span>
+              </a>
+            </div>
+
+            <div class="social-text">
+              <a
+                class="text-link d-flex"
+                target="_blank"
+                href="https://www.instagram.com/optionalcode/">
+                <div>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="color: #9f40ab">
+                    <path
+                      d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
+                    <path
+                      d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
+                  </svg>
+                </div>
+                <p style="color: #9f40ab" class="margin-0 text-bold font-sans">
+                  Instagram
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="social-card center">
+            <div class="social-icon">
+              <a target="_blank" href="https://www.linkedin.com/company/optionalcode">
+                <span
+                  style="
+                    box-sizing: border-box;
+                    display: block;
+                    overflow: hidden;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    position: relative;
+                  ">
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: block;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 100% 0px 0px;
+                    "></span>
+                  <img
+                    style="
+                      position: absolute;
+                      inset: 0px;
+                      box-sizing: border-box;
+                      padding: 0px;
+                      border: none;
+                      margin: auto;
+                      display: block;
+                      width: 0px;
+                      height: 0px;
+                      min-width: 100%;
+                      max-width: 100%;
+                      min-height: 100%;
+                      max-height: 100%;
+                    "
+                    src="images/linkedin.webp"
+                    alt="Linkedin Logo" />
+                </span>
+              </a>
+            </div>
+
+            <div class="social-text">
+              <a
+                class="text-link d-flex"
+                target="_blank"
+                href="https://www.linkedin.com/company/optionalcode/">
+                <div>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="color: rgb(0, 119, 181)">
+                    <path
+                      d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"></path>
+                    <path
+                      d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"></path>
+                  </svg>
+                </div>
+                <p
+                  style="color: rgb(0, 119, 181)"
+                  class="margin-0 text-bold font-sans">
+                  Linkedin
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="social-card">
+            <div class="social-icon">
+              <a target="_blank" href="https://www.facebook.com/optionalcode">
+                <span
+                  style="
+                    box-sizing: border-box;
+                    display: block;
+                    overflow: hidden;
+                    width: initial;
+                    height: initial;
+                    background: none;
+                    opacity: 1;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    position: relative;
+                  ">
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: block;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0px;
+                      margin: 0px;
+                      padding: 100% 0px 0px;
+                    "></span>
+                  <img id="fbLogo"
+                  src="images/fb.png"
+                    style="
+                      position: absolute;
+                      inset: 0px;
+                      box-sizing: border-box;
+                      padding: 0px;
+                      border: none;
+                      margin: auto;
+                      display: block;
+                      width: 0px;
+                      height: 0px;
+                      min-width: 100%;
+                      max-width: 100%;
+                      min-height: 100%;
+                      max-height: 100%;
+                    "
+                    alt="Facebook Logo" />
+                </span>
+              </a>
+            </div>
+
+            <div class="social-text">
+              <a
+                class="text-link d-flex"
+                target="_blank"
+                href="https://www.facebook.com/optionalcode">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/></svg>
+                </div>
+                <p class="git-text margin-0 text-bold font-sans">
+                  Facebook
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="line-div"></div>
+
+    <footer id="footer">
+      <div class="super-container font-poppin">
+        <div class="components-outer-container">
+          <div class="footer-container">
+            <div class="first">
+              
+              <div class="bottom">
+                <p class="text-white">
+                  <a href="#" style="font-family: Text Me One;font-size: 24px;">
+			   At <span id="logoText" style="color:black">optional<span style="color:#ed2f41">code</span></span>
+            </a> we provide high-quality coding education accessible and affordable for everyone. We believe that world-class knowledge should not be locked behind expensive programs. That’s why our courses are created and taught by experienced industry professionals who have spent years mastering their craft.
+<br/>
+We aim to bridge the gap between theory and real-world practice, equipping learners with the skills they need to succeed as developers in today’s competitive job market.
+                </p>
+                <p class="copyright">
+                  ©2025 optionalcode. All rights reserved
+                </p>
+              </div>
+            </div>
+            <div class="second">
+              <ul>
+                <li>
+                  <a href="#courses" class="footer-nav"
+                    >Our Courses</a
+                  >
+                </li>
+                <li>
+                  <a href="#social" class="footer-nav"
+                    >Social Media</a
+                  >
+                </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-02.jpg" alt="">
-              <span class="category">Graphic Teacher</span>
-              <h4>Cindy Walker</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-03.jpg" alt="">
-              <span class="category">Full Stack Master</span>
-              <h4>David Hutson</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-04.jpg" alt="">
-              <span class="category">Digital Animator</span>
-              <h4>Stella Blair</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
+            <div class="third">
+              <div class="top">
+                <p class="text-white">Get in Touch</p>
+                <div class="social-icons">
+                  <a
+                    class="text-white"
+                    href="https://www.linkedin.com/company/optionalcode"
+                    target="_blank"
+                    rel="noreferrer">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>
+                  <a
+                    class="text-white"
+                    href="https://www.instagram.com/optionalcode/"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 16 16"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg></a>
+                  <a
+                    class="text-white"
+                    href="https://www.youtube.com/@optionalcode"
+                    target="_blank"
+                    rel="noreferrer">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 16 16"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path></svg></a>
 
-  <div class="section testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="owl-carousel owl-testimonials">
-            <div class="item">
-              <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to download free templates. Thank you for visiting.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Full Stack Master</span>
-                <h4>Claude David</h4>
-              </div>
-            </div>
-            <div class="item">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">UI Expert</span>
-                <h4>Thomas Jefferson</h4>
-              </div>
-            </div>
-            <div class="item">
-              <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS layout is based on Bootstrap v5.3.0 framework.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Digital Animator</span>
-                <h4>Stella Blair</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h6>TESTIMONIALS</h6>
-            <h2>What they say about us?</h2>
-            <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio, templatemo gallery, templatemo blue color, etc.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section events" id="events">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Schedule</h6>
-            <h2>Upcoming Events</h2>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-01.jpg" alt="">
+<a
+                    class="text-dark"
+                    href="https://www.facebook.com/optionalcode"
+                    target="_blank"
+                    rel="noreferrer">						
+						<svg stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 16 16"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"><path d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></svg></a>
+					  
                 </div>
               </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Web Design</span>
-                    <h4>UI Best Practices</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>16 Feb 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>22 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$120</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-02.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Front End</span>
-                    <h4>New Design Trend</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>24 Feb 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>30 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$320</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-03.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Full Stack</span>
-                    <h4>Web Programming</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>12 Mar 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>48 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$440</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
+              <div class="bottom">
+                <p class="text-white">Contact Us</p>
+                <a href="mailto:optionalcode@gmail.com" class="text-white">optionalcode@gmail.com</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <div class="contact-us section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6  align-self-center">
-          <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h2>Feel free to contact us anytime</h2>
-            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
-            <div class="special-offer">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valide: <em>24 April 2036</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
-              <a href="#"><i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="contact-us-content">
-            <form id="contact-form" action="" method="post">
-              <div class="row">
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a> Distribution: <a href="https://themewagon.com" rel="nofollow" target="_blank">ThemeWagon</a></p>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
-  <script src="assets/js/custom.js"></script>
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".typed_text", {
+        strings: ["doing!", " right guidance!"],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true
+      })
+    </script>
+    
+    <script src="script.js"></script>
   </body>
 </html>
